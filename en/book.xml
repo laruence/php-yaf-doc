@@ -9,12 +9,12 @@
   &reftitle.intro;
   <para>
    The <literal>Yet Another Framework</literal>(<acronym>Yaf</acronym>) extension 
-   is a PHP framework, used for developing web application, It provides OO interfaces 
-   to PHPer for developing web application. 
+   is a PHP framework, used for developing web applications. It provides OO interfaces 
+   for PHPer to develop web applications. 
   </para>
   <para>
-   Yaf require PHP version greater than 5.2.1, and could not run with early
-   version of PHP.
+   The PHP version 5.2.1 or later is required. Yaf can not work with early
+   versions.
   </para>
   <para>
    A simple Yaf benchmark can be found at <link
