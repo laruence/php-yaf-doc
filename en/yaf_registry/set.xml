@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 317663 $ -->
+<!-- $Revision: 327673 $ -->
 
 <refentry xml:id="yaf-registry.set" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Registry::set</refname>
-  <refpurpose>The set purpose</refpurpose>
+  <refpurpose>Add an item into registry</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <modifier>static</modifier> <type>void</type><methodname>Yaf_Registry::set</methodname>
+   <modifier>public</modifier> <modifier>static</modifier> <type>bool</type><methodname>Yaf_Registry::set</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-
+   Add an item into registry
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">

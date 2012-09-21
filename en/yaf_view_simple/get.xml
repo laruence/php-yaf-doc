@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 324803 $ -->
+<!-- $Revision: 327672 $ -->
 
 <refentry xml:id="yaf-view-simple.get" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -14,15 +14,13 @@
    <methodparam choice="opt"><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
+   Retrieve assigned varaiable
    <note>
     <para>
      parameter can be empty since 2.1.11
     </para>
    </note>
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">

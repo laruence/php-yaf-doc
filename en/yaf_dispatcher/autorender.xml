@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320237 $ -->
+<!-- $Revision: 327530 $ -->
 
 <refentry xml:id="yaf-dispatcher.autorender" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -17,10 +17,13 @@
    <classname>Yaf_Dispatcher</classname> will render automatically after 
    dispatches a incoming request, you can prevent the rendering by calling
    this method with <parameter>flag</parameter> TRUE
+   <note>
+     <para>
+     you can simply return FALSE in a action to prevent the auto-rendering of
+     that action
+    </para>
+   </note>
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
@@ -60,6 +63,7 @@ class IndexController extends Yaf_Controller_Abstract {
              Yaf_Dispatcher::getInstance()->autoRender(FALSE);
          }
      } 
+
 }
 ?>
 ]]>

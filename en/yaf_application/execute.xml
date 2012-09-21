@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 324122 $ -->
+<!-- $Revision: 327529 $ -->
 
 <refentry xml:id="yaf-application.execute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -18,9 +18,6 @@
    This method is typically used to run Yaf_Application in a crontab work.
    Make the crontab work can also use the autoloader and Bootstrap mechanism.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,7 +27,7 @@
     <term><parameter>entry</parameter></term>
     <listitem>
      <para>
-      
+       a valid callback  
      </para>
     </listitem>
    </varlistentry>
@@ -38,7 +35,7 @@
     <term><parameter>...</parameter></term>
     <listitem>
      <para>
-      
+      parameters will pass to the callback
      </para>
     </listitem>
    </varlistentry>

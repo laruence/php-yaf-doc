@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 317663 $ -->
+<!-- $Revision: 327673 $ -->
 
 <refentry xml:id="yaf-registry.get" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Registry::get</refname>
-  <refpurpose>The get purpose</refpurpose>
+  <refpurpose>Retrieve an item from registry</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <modifier>static</modifier> <type>void</type><methodname>Yaf_Registry::get</methodname>
+   <modifier>public</modifier> <modifier>static</modifier> <type>mixed</type><methodname>Yaf_Registry::get</methodname>
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-
+   Retrieve an item from registry
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320077 $ -->
+<!-- $Revision: 327672 $ -->
 
 <refentry xml:id="yaf-view-simple.render" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -17,9 +17,6 @@
   <para>
     Render a tempalte and return the result.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">

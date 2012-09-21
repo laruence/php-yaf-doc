@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320077 $ -->
+<!-- $Revision: 327652 $ -->
 
 <refentry xml:id="yaf-application.bootstrap" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -18,7 +18,7 @@
     prefix "_init" will be called according to their declaration order, if the parameter bootstrap is not supplied, Yaf will look
     for a Bootstrap under application.directory.
   </para>
-  &warn.undocumented.func;
+
  </refsect1>
 
  <refsect1 role="parameters">
@@ -96,7 +96,6 @@ $application->bootstrap();
    <member><classname>Yaf_Bootstrap_Abstract</classname></member>
   </simplelist>
  </refsect1>
-
 
 </refentry>
 

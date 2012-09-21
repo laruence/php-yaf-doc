@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320078 $ -->
+<!-- $Revision: 327534 $ -->
 
 <refentry xml:id="yaf-view-simple.assignref" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -18,9 +18,6 @@
     unlike <methodname>Yaf_View_Simple::assign</methodname>, this method
     assign a ref value to engine.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">

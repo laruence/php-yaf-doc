@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320234 $ -->
+<!-- $Revision: 327529 $ -->
 
 <refentry xml:id="yaf-dispatcher.setview" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -17,8 +17,6 @@
      This method proviods a solution for that if you want use a custom view
      engine instead of <classname>Yaf_View_Simple</classname>
   </para>
-
-  &warn.undocumented.func;
 
  </refsect1>
 
