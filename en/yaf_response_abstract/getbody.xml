@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327529 $ -->
+<!-- $Revision: 328222 $ -->
 
 <refentry xml:id="yaf-response-abstract.getbody" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -26,7 +26,7 @@
     <listitem>
      <para>
       the content key, if you don't specific, then Yaf_Response_Abstract::DEFAULT_BODY
-      will be used. if you pass in a NULL, then all contents will be returned
+      will be used. if you pass in a &null;, then all contents will be returned
       as a array
       <note>
        <para>

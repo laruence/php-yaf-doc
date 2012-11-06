@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320357 $ -->
+<!-- $Revision: 328221 $ -->
 
 <refentry xml:id="yaf-route-regex.route" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -40,7 +40,7 @@
   <para>
    If the pattern given by the first parameter of 
    <methodname>Yaf_Route_Regex::_construct</methodname> matche the request
-   uri, return TRUE, otherwise return FALSE.
+   uri, return &true;, otherwise return &false;.
   </para>
  </refsect1>
 

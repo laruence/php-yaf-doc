@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 320263 $ -->
+<!-- $Revision: 328221 $ -->
 
 <phpdoc:classref xml:id="class.yaf-loader" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -25,9 +25,9 @@
     failed, depend on <link
      linkend="ini.yaf.use-spl-autoload">yaf.use_spl_auload</link>, if this
     config is On <methodname>Yaf_Loader::autoload</methodname> will return 
-    FALSE, thus give the chance to other autoload function. if it is Off 
+    &false;, thus give the chance to other autoload function. if it is Off 
     (by default), <methodname>Yaf_Loader::autoload</methodname> will return 
-    TRUE, and more important is that a very usefull warning will be triggerd 
+    &true;, and more important is that a very usefull warning will be triggerd 
     (very usefull to find out why a class could not be loaded). 
     <note>
      <para>
@@ -179,6 +179,15 @@ class A_B_TestModel =>
     </programlisting>
   </example>
 
+  <note>
+   <para>
+    As of 2.1.18, Yaf supports Controllers autoloading for user script side,
+    (which means the autoloading triggered by user php script, eg: access a
+    controller static property in Bootstrap or Plugins),
+    but autoloader only try to locate controller class script under the default
+    module folder, which is "APPLICATION_PATH/controllers/".
+   </para>
+  </note>
    also, the directory will be affected by <link linkend="ini.yaf.lowcase-path">yaf.lowcase_path</link>.
   </para>
   </section>

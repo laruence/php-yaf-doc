@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327652 $ -->
+<!-- $Revision: 328221 $ -->
 
 <section xml:id="yaf.configuration" xmlns="http://docbook.org/ns/docbook">
  &reftitle.runtime;
@@ -132,13 +132,26 @@
      <listitem>
       <para>
         When this value is On, if <classname>Yaf_Loader</classname> can not
-        find a class, it will return FALSE, then give chance to other auto
+        find a class, it will return &false;, then give chance to other auto
         load function to be called.      
       </para>
-
+      <para>
+        When this value is Off, if <classname>Yaf_Loader</classname> can not
+        find a class, it will return &true;, and make the class autoloading
+        failed immediately.
+      </para>
+      <note>
+       <para>
+        Yaf will register its loader during a instantiation of  
+        <classname>Yaf_Application</classname>, so any other auto loaders
+        which is register before the instantiation will be called before
+        <methodname>Yaf_Loader::autoload</methodname>.
+       </para>
+      </note>
       <para>
         When this value is Off(default),
-        <methodname>Yaf_Loader::autoload</methodname> will always return TRUE.
+        <methodname>Yaf_Loader::autoload</methodname> will always return
+        &true;.
       </para>
      </listitem>
     </varlistentry>
@@ -243,13 +256,27 @@
      </term>
      <listitem>
       <para>
-       Only works as of PHP 5.3, if this value is On, All class of Yaf will
+       Only works as of PHP 5.3, if this value is On, All classes of Yaf will
        named in namespace style.
       </para>
       <para>
-       For example, Yaf_Route_Rewrite => \Yaf\Route\Rewrite,
-       Yaf_Controller_Abstract => \Yaf\Controller_Abstract (Abstract is the
-       keyword, can not used as a class name)
+       For example:
+       <screen>
+        <![CDATA[
+Yaf_Route_Rewrite => \Yaf\Route\Rewrite
+Yaf_Request_Http  => \Yaf\Request\Http
+        ]]>
+       </screen>
+       There is a exception, that is some classes like
+       <classname>Yaf_Controller_Abstract</classname>.
+       The last component is a keyword of PHP, could not be used as a class
+       name, so for such classes:
+       <screen>
+        <![CDATA[
+Yaf_Controller_Abstract => \Yaf\Controller_Abstract
+Yaf_Route_Static => \Yaf\Route_Static
+        ]]>
+       </screen>
       </para>
      </listitem>
     </varlistentry>

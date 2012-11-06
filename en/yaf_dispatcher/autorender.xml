@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327530 $ -->
+<!-- $Revision: 328221 $ -->
 
 <refentry xml:id="yaf-dispatcher.autorender" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -11,15 +11,15 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>Yaf_Dispatcher</type><methodname>Yaf_Dispatcher::autoRender</methodname>
-   <methodparam><type>bool</type><parameter>flag</parameter></methodparam>
+   <methodparam choice="opt"><type>bool</type><parameter>flag</parameter></methodparam>
   </methodsynopsis>
   <para>
    <classname>Yaf_Dispatcher</classname> will render automatically after 
    dispatches a incoming request, you can prevent the rendering by calling
-   this method with <parameter>flag</parameter> TRUE
+   this method with <parameter>flag</parameter> &true;
    <note>
      <para>
-     you can simply return FALSE in a action to prevent the auto-rendering of
+     you can simply return &false; in a action to prevent the auto-rendering of
      that action
     </para>
    </note>
@@ -33,7 +33,13 @@
     <term><parameter>flag</parameter></term>
     <listitem>
      <para>
-       bool
+      bool
+      <note>
+       <para>
+        since 2.2.0, if this parameter is not given, then the current state
+        will be renturned
+       </para>
+      </note>
      </para>
     </listitem>
    </varlistentry>
