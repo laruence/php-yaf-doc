@@ -13,22 +13,19 @@
   <section xml:id="yaf-application.intro">
    &reftitle.intro;
    <para>
-     <classname>Yaf_Application</classname> provides a bootstrapping facility 
-     for applications which provides reusable resources, common- and 
-     module-based bootstrap classes and dependency checking. 
+    <classname>Yaf_Application</classname>为应用提供了一个辅助设施。
+    它提供了可重用的资源，常见的和模块化的引导类，还有依赖的检查。
    </para>
    <para>
     <note>
      <para>
-       <classname>Yaf_Application</classname> implements the singleton
-       pattern, and <classname>Yaf_Application</classname> can not be
-       serialized or unserialized which will cause problem when you try 
-       to use PHPUnit to write some test case for Yaf.
+       <classname>Yaf_Application</classname>实现了单利模式。
+       <classname>Yaf_Application</classname>不能够被序列化和反序列化，
+       因为当你尝试使用PHPUnit来为Yaf写一些测试用例的时候会造成一些不必要的麻烦。
       </para>
       <para>
-       You may use @backupGlobals annotation of PHPUnit to control the 
-       backup and restore operations for global variables. thus can solve 
-       this promblem.
+        你可以使用PHPUnit的@backupGlobals注释来控制全局变量的备份和恢复操作，
+        从而可以解决这个问题。
      </para>
     </note>
    </para>
