@@ -3,7 +3,7 @@
 
 <phpdoc:classref xml:id="class.yaf-dispatcher" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
 
- <title>The Yaf_Dispatcher class</title>
+ <title>Yaf_Dispatcher 类</title>
  <titleabbrev>Yaf_Dispatcher</titleabbrev>
 
  <partintro>
@@ -12,16 +12,14 @@
   <section xml:id="yaf-dispatcher.intro">
    &reftitle.intro;
    <para>
-    <classname>Yaf_Dispatcher</classname> purpose is to initialize 
-    the request environment, route the incoming request, and then dispatch
-    any discovered actions; it aggregates any responses and returns them 
-    when the process is complete.
+    <classname>Yaf_Dispatcher</classname>用于初始化处理请求的运行环境, 
+    它协调路由来的请求, 并分发和执行发现的动作, 
+    然后收集动作产生的响应, 输出响应给请求者, 并在整个过程完成以后返回响应.
    </para>
    <para>
-    <classname>Yaf_Dispatcher</classname> also implements the Singleton pattern, 
-    meaning only a single instance of it may be available at any given time. This
-    allows it to also act as a registry on which the other objects in the
-    dispatch process may draw.
+    <classname>Yaf_Dispatcher</classname>是单例模式运行的, 
+    也就是说自始至终只生成一个<classname>Yaf_Dispatcher</classname>实例, 
+    因此, 可以把它看成是在分发过程中生成的对象的注册表, 可以从中获取到分发过程中产生的对象.
    </para>
   </section>
 <!-- }}} -->
