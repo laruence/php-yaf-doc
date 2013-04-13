@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.execute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::execute</refname>
-  <refpurpose>Execute a callback</refpurpose>
+  <refpurpose>运行回调函数</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,8 +15,8 @@
    <methodparam><type>string</type><parameter>...</parameter></methodparam>
   </methodsynopsis>
   <para>
-   This method is typically used to run Yaf_Application in a crontab work.
-   Make the crontab work can also use the autoloader and Bootstrap mechanism.
+   这个方法通常用于在cron任务中运行Yaf_Application。
+   在cron任务中也可以使用autoloader和Bootstrap机制。
   </para>
  </refsect1>
 
@@ -26,8 +26,8 @@
    <varlistentry>
     <term><parameter>entry</parameter></term>
     <listitem>
-     <para>
-       a valid callback  
+     <para>  
+       一个有效的回调函数
      </para>
     </listitem>
    </varlistentry>
@@ -35,7 +35,7 @@
     <term><parameter>...</parameter></term>
     <listitem>
      <para>
-      parameters will pass to the callback
+      零个或者多个要传递给函数的参数。
      </para>
     </listitem>
    </varlistentry>

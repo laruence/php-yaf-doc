@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.environ" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::environ</refname>
-  <refpurpose>Retrive environ</refpurpose>
+  <refpurpose>获取当前Yaf_Application的环境名</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,8 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-   Retrive environ which was defined in yaf.environ which has a default value
-   "product".
+   返回当前Yaf_Application的环境名，它被定义在yaf.environ，默认值为"product"。
   </para>
 
 
