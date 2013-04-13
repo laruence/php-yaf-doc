@@ -19,7 +19,7 @@
    <para>
     <note>
      <para>
-       <classname>Yaf_Application</classname>实现了单利模式。
+       <classname>Yaf_Application</classname>实现了单例模式。
        <classname>Yaf_Application</classname>不能够被序列化和反序列化，
        因为当你尝试使用PHPUnit来为Yaf写一些测试用例的时候会造成一些不必要的麻烦。
       </para>
