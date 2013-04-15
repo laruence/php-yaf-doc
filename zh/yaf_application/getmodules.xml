@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.getmodules" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::getModules</refname>
-  <refpurpose>Get defined module names</refpurpose>
+  <refpurpose>获取在配置文件中申明的模块</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,8 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-    Get the modules list defined in config, if no one defined, there will
-    always be a module named "Index".
+    获取在配置文件中声明的模块，如果没有声明，它的默认值将是"Index"。
   </para>
 
 

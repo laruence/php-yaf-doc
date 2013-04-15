@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.getappdirectory" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::getAppDirectory</refname>
-  <refpurpose>Get the application directory</refpurpose>
+  <refpurpose>获取应用的目录</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

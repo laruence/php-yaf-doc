@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.clone" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::__clone</refname>
-  <refpurpose>Yaf_Application can not be cloned</refpurpose>
+  <refpurpose>Yaf_Application不能被克隆</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

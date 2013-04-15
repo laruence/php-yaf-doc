@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.sleep" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::__sleep</refname>
-  <refpurpose>Yaf_Application can not be serialized</refpurpose>
+  <refpurpose>Yaf_Application 不能被序列化</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
