@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.bootstrap" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::bootstrap</refname>
-  <refpurpose>Call bootstrap</refpurpose>
+  <refpurpose>调用bootstrap</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,9 +14,8 @@
    <methodparam choice="opt"><type>Yaf_Bootstrap_Abstract</type><parameter>bootstrap</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Run a Bootstrap, all the methods defined in the Bootstrap and named with
-    prefix "_init" will be called according to their declaration order, if the parameter bootstrap is not supplied, Yaf will look
-    for a Bootstrap under application.directory.
+    指示Yaf_Application去寻找Bootstrap，并按照声明的顺序，执行所有在Bootstrap类中定义的以_init开头的方法。
+    如果没有提供变量bootstrap，Yaf默认会去application.directory中寻找Bootstrap。
   </para>
 
  </refsect1>
