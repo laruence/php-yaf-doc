@@ -8,18 +8,17 @@
  <preface xml:id="intro.yaf">
   &reftitle.intro;
   <para>
-   The <literal>Yet Another Framework</literal> (<acronym>Yaf</acronym>) extension 
-   is a PHP framework that is used to develop web applications.
+   <literal>Yet Another Framework</literal> (<acronym>Yaf</acronym>) 扩展是一个用来开发web应用的php框架
   </para>
   <para>
-   Yaf require PHP 5.2.1 or greater. Earlier versions may not work.
+   运行Yaf的php版本需要大于等于5.2.1，更早期的版本可能不能正常工作.
   </para>
   <para>
-   A simple Yaf benchmark can be found at <link
+   这里有一个简单的性能对比资料 <link
     xlink:href="&url.yaf.benchmarks;">Yaf Performance</link>.
   </para>
   <para>
-   For quick start, please refert to <link
+   快速入门请参见 <link
     linkend="yaf.tutorials">Turorials</link>.
   </para>
  </preface>

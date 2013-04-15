@@ -6,7 +6,7 @@
 
  <section role="examples">
   <example>
-   <title>A classic Application directory layout</title>
+   <title>一个典型的目录结构</title>
    <screen>
 <![CDATA[
 - index.php 
@@ -31,8 +31,8 @@
 
  <section role="examples">
  <example>
-  <title>Entry</title>
-  <para>index.php in the top directory is the only way in of the application, you should rewrite all request to it(you can use .htaccess in Apache+php_mod) </para>
+  <title>一个经典的入口文件/title>
+  <para>入口文件是所有请求的入口, 一般都借助于rewrite规则, 把所有的请求都重定向到这个入口文件.</para>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -49,7 +49,7 @@ $app->bootstrap() //call bootstrap methods defined in Bootstrap.php
 
  <section role="examples">
  <example>
-  <title>Rewrite rule</title>
+  <title>重写规则</title>
   <screen>
 <![CDATA[
 #for apache (.htaccess)
@@ -82,7 +82,7 @@ $HTTP["host"] =~ "(www.)?domain.com$" {
 
  <section role="examples">
  <example>
-  <title>Application config</title>
+  <title>一个简单的配置文件</title>
    <programlisting role="ini">
 <![CDATA[
 [yaf]
@@ -99,7 +99,7 @@ foo=bar
 
  <section role="examples">
  <example>
-  <title>Default controller</title>
+  <title>默认控制器</title>
    <programlisting role="php">
 <![CDATA[
 <?php
@@ -117,7 +117,7 @@ class IndexController extends Yaf_Controller_Abstract {
 
  <section role="examples">
  <example>
-  <title>Default view template</title>
+  <title>默认的视图文件</title>
    <programlisting role="php">
 <![CDATA[
 <html>
@@ -135,7 +135,7 @@ class IndexController extends Yaf_Controller_Abstract {
 
  <section role="examples">
   <example>
-   <title>Run the Applicatioin</title>
+   <title>运行结果</title>
     &example.outputs.similar;
    <screen>
 <![CDATA[
