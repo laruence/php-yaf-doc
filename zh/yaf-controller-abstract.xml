@@ -137,7 +137,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_module</varname></term>
      <listitem>
       <para>
-        module name
+        模块名
       </para>
      </listitem>
     </varlistentry>
@@ -151,7 +151,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_request</varname></term>
      <listitem>
       <para>
-      the request object
+      当前的请求实例
       </para>
      </listitem>
     </varlistentry>
@@ -171,7 +171,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_view</varname></term>
      <listitem>
       <para>
-      view engine object
+      视图引擎
       </para>
      </listitem>
     </varlistentry>

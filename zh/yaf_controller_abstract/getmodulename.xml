@@ -14,7 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-   get the controller's module name
+  获取当前控制器所属的模块名
   </para>
  </refsect1>
 

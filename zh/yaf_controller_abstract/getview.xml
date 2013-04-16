@@ -14,7 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-   retrieve view engine
+  获取当前的视图引擎
   </para>
  </refsect1>
 
