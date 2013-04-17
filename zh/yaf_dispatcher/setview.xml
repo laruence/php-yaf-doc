@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.setview" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::setView</refname>
-  <refpurpose>Set a custom view engine</refpurpose>
+  <refpurpose>设置视图引擎</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,8 +14,8 @@
    <methodparam><type>Yaf_View_Interface</type><parameter>view</parameter></methodparam>
   </methodsynopsis>
   <para>
-     This method proviods a solution for that if you want use a custom view
-     engine instead of <classname>Yaf_View_Simple</classname>
+     如果你想使用自己的视图引擎代替 <classname>Yaf_View_Simple</classname> ，
+     这个函数会帮你解决这个问题。
   </para>
 
  </refsect1>

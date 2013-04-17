@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.initview" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::initView</refname>
-  <refpurpose>Initialize view and return it</refpurpose>
+  <refpurpose>初始化视图引擎并返回它</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

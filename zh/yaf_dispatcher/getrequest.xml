@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.getrequest" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::getRequest</refname>
-  <refpurpose>Retrive the request instance</refpurpose>
+  <refpurpose>获取当前的请求实例</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
