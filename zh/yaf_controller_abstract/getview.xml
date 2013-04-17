@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-controller-abstract.getview" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Controller_Abstract::getView</refname>
-  <refpurpose>Retrieve the view engine</refpurpose>
+  <refpurpose>获取当前的视图引擎</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,7 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-   retrieve view engine
+  获取当前的视图引擎
   </para>
  </refsect1>
 

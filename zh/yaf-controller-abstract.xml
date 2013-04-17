@@ -12,29 +12,22 @@
   <section xml:id="yaf-controller-abstract.intro">
    &reftitle.intro;
    <para>
-    <classname>Yaf_Controller_Abstract</classname> is the heart of Yaf's 
-    system. MVC stands for Model-View-Controller and is a design pattern 
-    targeted at separating application logic from display logic.
+    <classname>Yaf_Controller_Abstract</classname> 是Yaf的MVC体系的核心部分。
+    MVC是指Model-View-Controller, 是一个用于分离应用逻辑和表现逻辑的设计模式。
    </para>
    <para>
-    Every custom controller shall inherit
-    <classname>Yaf_Controller_Abstract</classname>.
+    每个用户自定义controller都应当继承<classname>Yaf_Controller_Abstract</classname>。
    </para>
    <para>
-    You will find that you can not define __construct function for your custom
-    controller, thus, <classname>Yaf_Controller_Abstract</classname> provides
-    a magic method: Yaf_Controller_Abstract::init().
+    你会发现在你自己的controller中无法定义__construct方法。因此，<classname>Yaf_Controller_Abstract</classname>
+    提供了一个魔术方法Yaf_Controller_Abstract::init()。
    </para>
    <para>
-    If you have defined a init() method in your custom controller, it will be
-    called as long as the controller was instantiated.
+    如果在你自己的controller里面已经定义了一个init()方法，当你的controller被实例化的时候，它将被调用。
    </para>
    <para>
-    Action may have arguments, when a request coming, if there are the same
-    name variable in the request parameters(see
-    <methodname>Yaf_Request_Abstract::getParam</methodname>) after routed, 
-    Yaf will pass them to the action method(see
-    <methodname>Yaf_Action_Abstract::execute</methodname>).
+    Action可能需要参数，当一个请求来到的时候，在路由中如果请求的参数有相同名称的变量（例如：<methodname>Yaf_Request_Abstract::getParam</methodname>），
+    Yaf将把他们传递给action方法（see <methodname>Yaf_Action_Abstract::execute</methodname>）。
    </para>
   </section>
 <!-- }}} -->
@@ -101,10 +94,9 @@
      <term><varname>actions</varname></term>
      <listitem>
       <para>
-      You can also define a action method in a separate PHP script by using
-      this property and <classname>Yaf_Action_Abstract</classname>.
+      你也可以通过使用这个值和 <classname>Yaf_Action_Abstract</classname> 在一个单独的PHP脚本中定义action函数。
       <example>
-       <title>define action in a separate file</title>
+       <title>在一个独立的文件中定义action</title>
         <programlisting role="php">
 <![CDATA[
 <?php
@@ -145,7 +137,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_module</varname></term>
      <listitem>
       <para>
-        module name
+        模块名
       </para>
      </listitem>
     </varlistentry>
@@ -159,7 +151,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_request</varname></term>
      <listitem>
       <para>
-      the request object
+      当前的请求实例
       </para>
      </listitem>
     </varlistentry>
@@ -179,7 +171,7 @@ class DummyAction extends Yaf_Action_Abstract {
      <term><varname>_view</varname></term>
      <listitem>
       <para>
-      view engine object
+      视图引擎
       </para>
      </listitem>
     </varlistentry>

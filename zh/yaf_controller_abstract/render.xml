@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-controller-abstract.render" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Controller_Abstract::render</refname>
-  <refpurpose>Render view template</refpurpose>
+  <refpurpose>渲染视图模板</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
