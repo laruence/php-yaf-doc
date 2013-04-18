@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.catchexception" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::catchException</refname>
-  <refpurpose>Switch on/off exception catching</refpurpose>
+  <refpurpose>开启/关闭自动异常捕获功能</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,14 +14,10 @@
    <methodparam choice="opt"><type>bool</type><parameter>flag</parameter></methodparam>
   </methodsynopsis>
   <para>
-     While the application.dispatcher.throwException is On(you can also calling
-     to <methodname>Yaf_Dispatcher::throwException(TRUE)</methodname> to enable it),  Yaf will throw Exception whe
-     error occurrs instead of trigger error. 
+     当 application.dispatcher.throwException 开启的时候（你也可以通过调用 <methodname>Yaf_Dispatcher::throwException(TRUE)</methodname> 来开启它），Yaf将会抛出异常而不是触发异常发生。
   </para>
   <para>   
-     then if you enable <methodname>Yaf_Dispatcher::catchException</methodname>(also can enabled by set
-     <link linkend="configuration.yaf.dispatcher.catchexception">application.dispatcher.catchException</link>), 
-     all uncaught Exceptions will be caught by ErrorController::error if you have defined one.
+     如果开启了 <methodname>Yaf_Dispatcher::catchException</methodname> （可以通过设置<link linkend="configuration.yaf.dispatcher.catchexception">application.dispatcher.catchException</link>来开启），并且在你定义了异常处理的controller的情况下，Yaf会将所有未捕获的异常交给Error Controller的Error Action来处理。
   </para>
  </refsect1>
 

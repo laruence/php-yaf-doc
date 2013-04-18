@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.setdefaultaction" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::setDefaultAction</refname>
-  <refpurpose>Change default action name</refpurpose>
+  <refpurpose>设置路由的默认动作</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

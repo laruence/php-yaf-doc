@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.autorender" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::autoRender</refname>
-  <refpurpose>Switch on/off autorendering</refpurpose>
+  <refpurpose>开启/关闭自动渲染功能</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,13 +14,11 @@
    <methodparam><type>bool</type><parameter>flag</parameter></methodparam>
   </methodsynopsis>
   <para>
-   <classname>Yaf_Dispatcher</classname> will render automatically after 
-   dispatches a incoming request, you can prevent the rendering by calling
-   this method with <parameter>flag</parameter> TRUE
+   在开启的情况下(Yaf默认开启)，action执行完成以后，<classname>Yaf_Dispatcher</classname> 会自动调用view引擎去渲染该action对应的视图模板。
+   你也可以通过调用这个函数并将 <parameter>flag</parameter> 参数的值设为TRUE来人工干预它。
    <note>
      <para>
-     you can simply return FALSE in a action to prevent the auto-rendering of
-     that action
+     你可以在一个action中仅仅返回FALSE来阻止当前action对应视图的自动渲染
     </para>
    </note>
   </para>
