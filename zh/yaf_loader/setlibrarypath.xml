@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-loader.setlibrarypath" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Loader::setLibraryPath</refname>
-  <refpurpose>Change the library path</refpurpose>
+  <refpurpose>改变library路径</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
