@@ -3,7 +3,7 @@
 
 <phpdoc:classref xml:id="class.yaf-view-simple" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
 
- <title>The Yaf_View_Simple class</title>
+ <title>Yaf_View_Simple 类</title>
  <titleabbrev>Yaf_View_Simple</titleabbrev>
 
  <partintro>
@@ -12,9 +12,7 @@
   <section xml:id="yaf-view-simple.intro">
    &reftitle.intro;
    <para>
-     <classname>Yaf_View_Simple</classname> is the built-in template engine in
-     Yaf, it is a simple but fast template engine, and only support PHP script
-     template.
+     <classname>Yaf_View_Simple</classname> 这是Yaf内建的一个模板引擎，是个简单而快速的模板引擎，只支持PHP脚本
    </para>
   </section>
 <!-- }}} -->
