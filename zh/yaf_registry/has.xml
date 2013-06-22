@@ -14,7 +14,7 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Check whether an item exists
+    查询某一项目是否存在于注册表中
   </para>
  </refsect1>
 
