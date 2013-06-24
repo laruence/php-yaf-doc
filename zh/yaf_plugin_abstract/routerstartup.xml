@@ -15,8 +15,7 @@
    <methodparam><type>Yaf_Response_Abstract</type><parameter>response</parameter></methodparam>
   </methodsynopsis>
   <para>
-    This is the earliest hook in Yaf plugin hook system, if a custom plugin
-    implement this method, then it will be called before routing a request.
+    这个是Yaf插件的勾子系统最早被触发的的一个方法，如果一个用户插件实现了这个方法，它将在路由之前触发。
   </para>
 
   &warn.undocumented.func;

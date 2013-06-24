@@ -15,7 +15,7 @@
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Add an item into registry
+   往全局注册表添加一个新的项
   </para>
  </refsect1>
 
