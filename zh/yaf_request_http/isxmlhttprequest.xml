@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-request-http.isxmlhttprequest" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Http::isXmlHttpRequest</refname>
-  <refpurpose>Whether a Ajax Request</refpurpose>
+  <refpurpose>是否为Ajax请求</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,11 +14,10 @@
    <void />
   </methodsynopsis>
   <para>
-    Check the request whether it is a Ajax Request.
+    检查请求是否是Ajax请求
     <note>
      <para>
-      This method depends on the request header: HTTP_X_REQUESTED_WITH, some
-      Javascript library doesn't set this header while doing Ajax request
+      这个方法取决于请求报头：HTTP_X_REQUESTED_WITH，一些Javascript库在做Ajax请求时候不设置这个报文头。
      </para>
     </note>
   </para>

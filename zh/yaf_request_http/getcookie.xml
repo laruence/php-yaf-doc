@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-request-http.getcookie" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Http::getCookie</refname>
-  <refpurpose>Retrieve Cookie varialbe</refpurpose>
+  <refpurpose>返回Cookie变量</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>default</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Retrieve Cookie variable
+   返回Cookie变量
   </para>
  </refsect1>
 
@@ -34,8 +34,7 @@
     <term><parameter>default</parameter></term>
     <listitem>
      <para>
-      if this parameter is provide, this will be returned if the cookie can
-      not be found
+      如果提供了此参数，当变量在未被找到的情况下，提供的参数将被返回
      </para>
     </listitem>
    </varlistentry>
