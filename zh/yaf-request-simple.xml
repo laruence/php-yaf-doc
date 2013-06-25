@@ -12,8 +12,7 @@
   <section xml:id="yaf-request-simple.intro">
    &reftitle.intro;
    <para>
-    <classname>Yaf_Request_Simple</classname> is particularlly used for test
-    puporse. ie. simulate some espacial request under CLI mode.
+    <classname>Yaf_Request_Simple</classname> 特别的被用于测试。例如：CLI模式下模拟一些特殊的要求
    </para>
   </section>
 <!-- }}} -->

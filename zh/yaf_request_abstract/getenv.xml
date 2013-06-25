@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-request-abstract.getenv" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Abstract::getEnv</refname>
-  <refpurpose>Retrieve ENV varialbe</refpurpose>
+  <refpurpose>取得ENV变量的值</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>default</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Retrieve ENV variable
+    取得ENV变量的值
   </para>
  </refsect1>
 
@@ -34,8 +34,7 @@
     <term><parameter>default</parameter></term>
     <listitem>
      <para>
-      if this parameter is provide, this will be returned if the varialbe can
-      not be found
+      如果这个参数被提供了，当参数找不到的时候它将被返回
      </para>
     </listitem>
    </varlistentry>

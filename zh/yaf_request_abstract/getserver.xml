@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-request-abstract.getserver" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Abstract::getServer</refname>
-  <refpurpose>Retrieve SERVER variable</refpurpose>
+  <refpurpose>返回SERVER变量的值</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>default</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Retrieve SERVER variable
+   返回SERVER变量的值
   </para>
  </refsect1>
 
@@ -34,8 +34,7 @@
     <term><parameter>default</parameter></term>
     <listitem>
      <para>
-      if this parameter is provide, this will be returned if the variable can
-      not be found
+      如果提供这个参数，在没找到变量值时候此参数的值将被返回
      </para>
     </listitem>
    </varlistentry>
