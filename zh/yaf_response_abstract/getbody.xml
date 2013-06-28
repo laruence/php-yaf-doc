@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-response-abstract.getbody" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Response_Abstract::getBody</refname>
-  <refpurpose>Retrieve a exists content</refpurpose>
+  <refpurpose>获取已经设置的响应body</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,7 +14,7 @@
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Retrieve a exists content
+   获取已经设置的响应body
   </para>
  </refsect1>
 
@@ -25,9 +25,7 @@
     <term><parameter>key</parameter></term>
     <listitem>
      <para>
-      the content key, if you don't specific, then Yaf_Response_Abstract::DEFAULT_BODY
-      will be used. if you pass in a NULL, then all contents will be returned
-      as a array
+      body所对应的key，如果你没指定key，系统默认使用Yaf_Response_Abstract::DEFAULT_BODY。如果你传入一个NULL，所有的内容将会以数组形式被返回。
       <note>
        <para>
        this parameter is introduced as of 2.2.0
