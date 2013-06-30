@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-response-abstract.clearbody" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Response_Abstract::clearBody</refname>
-  <refpurpose>The clearBody purpose</refpurpose>
+  <refpurpose>清除已经设置的响应body</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,7 +14,7 @@
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Clear existsed content
+   清除已经设置的响应body
   </para>
  </refsect1>
 
@@ -27,6 +27,7 @@
      <para>
       the content key, if you don't specific, then all contents will be
       cleared.
+      如果你没选择具体清除哪个key所对应的内容，那所有内容将被清除
       <note>
        <para>
        this parameter is introduced as of 2.2.0

@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-response-abstract.appendbody" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Response_Abstract::appendBody</refname>
-  <refpurpose>append to body</refpurpose>
+  <refpurpose>往已有的响应body后附加新的内容</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
   <para>
-   append a content to a exists content block
+   往已有的响应body后附加新的内容
   </para>
  </refsect1>
 
@@ -34,8 +34,7 @@
     <term><parameter>key</parameter></term>
     <listitem>
      <para>
-      the content key, you can set a content with a key, if you don't
-      specific, then Yaf_Response_Abstract::DEFAULT_BODY will be used
+      响应内容的key，你可以设置一个键值对，如果你没有具体的设置的话，系统默认使用Yaf_Response_Abstract::DEFAULT_BODY
       <note>
        <para>
        this parameter is introduced as of 2.2.0
