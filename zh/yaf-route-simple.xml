@@ -12,17 +12,13 @@
   <section xml:id="yaf-route-simple.intro">
    &reftitle.intro;
    <para>
-    <classname>Yaf_Route_Simple</classname> will match the query string, and
-    find the route info.
+    <classname>Yaf_Route_Simple</classname> 会匹配请求中的query string，然后找到路由信息。
    </para>
    <para>
-    all you need to do is tell <classname>Yaf_Route_Simple</classname> what key in the $_GET is
-     module, what key is controller, and what key is action.
+     你需要做的只是告诉 <classname>Yaf_Route_Simple</classname>，在$_GET中哪个是Module，哪个是Controller，哪个是Action。
    </para>
    <para>
-    <methodname>Yaf_Route_Simple::route</methodname> will always return TRUE,
-    so it is important put <classname>Yaf_Route_Simple</classname> in the front of the Route stack,
-    otherwise all the other routes will not be called.
+    <methodname>Yaf_Route_Simple::route</methodname> 总是会返回TRUE，所以把<classname>Yaf_Route_Simple</classname>放在路由堆栈前面是很重要的，否则其他所有的路由都可能不会被调用到。
    </para>
   </section>
 <!-- }}} -->

@@ -38,7 +38,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   always be TRUE
+   总是返回TRUE
   </para>
  </refsect1>
 

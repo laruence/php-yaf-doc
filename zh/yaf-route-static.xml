@@ -12,18 +12,13 @@
   <section xml:id="yaf-route-static.intro">
    &reftitle.intro;
    <para>
-     Defaultly, <classname>Yaf_Router</classname> only have a
-     <classname>Yaf_Route_Static</classname> as its default route.
+     默认的，<classname>Yaf_Router</classname> 只有一个<classname>Yaf_Route_Static</classname> 作为它默认的路由
    </para>
    <para>
-     And <classname>Yaf_Route_Static</classname> is designed to handle the
-     80% requirement. 
+     <classname>Yaf_Route_Static</classname> 旨在处理80%的要求。
    </para>
    <para>
-     please *NOTE* that it is unecessary to instance a <classname>Yaf_Route_Static</classname>, also 
-     unecesary to add it into <classname>Yaf_Router</classname>'s route stack,
-     since there is always be one in <classname>Yaf_Router</classname>'s route
-     stack, and always be called at the last time.
+     请注意：实例化 <classname>Yaf_Route_Static</classname> 是没有必要的，也没必要将它加入<classname>Yaf_Router</classname>的路由堆栈，因为在<classname>Yaf_Router</classname>的路由堆栈中总是存在它的一个实例，并且总是在最后被调用。
    </para>
   </section>
 <!-- }}} -->
