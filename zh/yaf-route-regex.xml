@@ -12,8 +12,7 @@
   <section xml:id="yaf-route-regex.intro">
    &reftitle.intro;
    <para>
-     <classname>Yaf_Route_Regex</classname> is the most flexible route among
-     the Yaf built-in routes.
+     <classname>Yaf_Route_Regex</classname> 是Yaf内置的路由中最灵活的。
    </para>
   </section>
 <!-- }}} -->

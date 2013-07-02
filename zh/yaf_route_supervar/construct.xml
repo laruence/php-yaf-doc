@@ -14,10 +14,7 @@
    <methodparam><type>string</type><parameter>supervar_name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   <classname>Yaf_Route_Supervar</classname> is similar with
-   <classname>Yaf_Route_Static</classname>, the difference is
-   <classname>Yaf_Route_Supervar</classname> will look for path info in query
-   string, and the parameter <varname>supervar_name</varname> is the key.
+   <classname>Yaf_Route_Supervar</classname> 类似于 <classname>Yaf_Route_Static</classname>，不同的是<classname>Yaf_Route_Supervar</classname> 在query string 中寻找路劲信息，参数 <varname>supervar_name</varname> 是建。
   </para>
 
   &warn.undocumented.func;
@@ -31,7 +28,7 @@
     <term><parameter>supervar_name</parameter></term>
     <listitem>
      <para>
-      The name of key.
+      键名
      </para>
     </listitem>
    </varlistentry>

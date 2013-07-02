@@ -29,7 +29,7 @@
     <term><parameter>controller_prefer</parameter></term>
     <listitem>
      <para>
-      Whether the result should considering as controller or action
+      结果是否应该考虑作为controller或action
      </para>
     </listitem>
    </varlistentry>

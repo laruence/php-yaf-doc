@@ -12,8 +12,7 @@
   <section xml:id="yaf-route-interface.intro">
    &reftitle.intro;
    <para>
-    <classname>Yaf_Route_Interface</classname> used for developer defined
-    their custom route.
+    <classname>Yaf_Route_Interface</classname>是Yaf路由协议的标准接口, 它的存在使得用户可以自定义路由协议
    </para>
   </section>
 <!-- }}} -->
