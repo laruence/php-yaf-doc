@@ -12,23 +12,11 @@
   <section xml:id="yaf-router.intro">
    &reftitle.intro;
    <para>
-   <classname>Yaf_Router</classname> is the standard framework router. Routing is
-   the process of taking a URI endpoint (that part of the URI which comes
-   after the base URL) and decomposing it into parameters to determine which
-   module, controller, and action of that controller should receive the
-   request. This values of the module, controller, action and other parameters
-   are packaged into a <classname>Yaf_Request_Abstract</classname> object which is then
-   processed by <classname>Yaf_Dispatcher</classname>. Routing occurs only once:
-   when the request is initially received and before the first controller is
-   dispatched.
-
-   <classname>Yaf_Router</classname> is designed to allow for mod_rewrite-like
-   functionality using pure PHP structures. It is very loosely based on Ruby
-   on Rails routing and does not require any prior knowledge of webserver URL
-   rewriting. It is designed to work with a single Apache mod_rewrite rule
-   (one of):
+   <classname>Yaf_Router</classname>是标准的框架路由.路由是一个拿到URI端点（URL中的URI的一部分）然后分解参数得到哪一个module, controller, 和action需要接受请求。module, controller, 和action，还有一些其他的参数是打包在一个<classname>Yaf_Request_Abstract</classname>的对象中，然后通过<classname>Yaf_Dispatcher</classname>来处理的。路由只发生一次:最初接到请求并且在第一个controller分发之前。
+   <classname>Yaf_Router</classname> 是设计来允许使用纯PHP结构的类似功能模块的跳转。它非常松散的基于Ruby on Rails的路由，并且不需要你提前就知道webserver URL跳转的相关知识。它是设计来处理一个Apache 跳转模块的规则（一个）
+   <classname>Yaf_Router</classname>是设计来允许mod_rewrite
    <example>
-    <title>Rewrite rule for Apache</title>
+    <title>Apache的跳转规则</title>
    <programlisting role="conf">
 <![CDATA[
 RewriteEngine on
@@ -38,7 +26,7 @@ RewriteRule !\.(js|ico|gif|jpg|png|css|html)$ index.php
    </example>
    or (preferred):
    <example>
-   <title>Rewrite rule for Apache</title>
+   <title>Apache的跳转规则</title>
    <programlisting role="conf">
 <![CDATA[
 RewriteEngine On
@@ -50,9 +38,9 @@ RewriteRule ^.*$ index.php [NC,L]
 ]]>
    </programlisting>
   </example>
-   If using Lighttpd, the following rewrite rule is valid:
+   如果使用Lighttpd，下面的跳转规则是有效的：
    <example>
-    <title>Rewrite rule for Lighttpd</title>
+    <title>Lighttpd的跳转规则</title>
    <programlisting role="conf">
 <![CDATA[
 url.rewrite-once = (
@@ -63,9 +51,9 @@ url.rewrite-once = (
 ]]>
    </programlisting>
   </example>
-   If using Nginx, use the following rewrite rule:
+   如果使用Nginx，下面的跳转规则是有效的：
    <example>
-    <title>Rewrite rule for Nginx</title>
+    <title>Nginx的跳转规则</title>
    <programlisting role="conf">
 <![CDATA[
 server {
@@ -86,25 +74,18 @@ server {
 <!-- }}} -->
 
   <section xml:id="yaf-router.default">
-   <title>Default route</title>
+   <title>默认路由</title>
    <para>
-   Yaf_Router comes preconfigured with a default route, which
-   will match URIs in the shape of controller/action. Additionally, a module
-   name may be specified as the first path element, allowing URIs of the form
-   module/controller/action. Finally, it will also match any additional
-   parameters appended to the URI by default -
-   controller/action/var1/value1/var2/value2.
+   Yaf_Router预设了一个默认路由，它将以controller/action的形式匹配URIs。此外，一个module的名字可以被指定为第一路径元素，允许URIs设置为module/controller/action的形式。最后，它也会匹配一些URI中额外附加的参数，默认形式是controller/action/var1/value1/var2/value2。
     <note>
      <para>
-      Module name must be defined in config, considering application.module="Index,Foo,Bar",
-      in this case, only index, foo and bar can be considerd as a module name.
-      if doesn't config, there is only one module named "Index". 
+      Module的名字必须要定义在配置中，就application.module="Index,Foo,Bar"而言，在这种情况下，仅仅index, foo 和 bar能被考虑作为为一个module的名称。如果没有在配置文件中定义，那么Yaf使用默认的module名字“Index”。
      </para>
     </note>
    </para>
 
    <para>
-   Some examples of how such routes are matched:
+   如何匹配这些路由的一些例子：
    <example>
     <title><classname>Yaf_Route_Static</classname>(default
      route)example</title>

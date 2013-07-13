@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-router.addconfig" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Router::addConfig</refname>
-  <refpurpose>Add config-defined routes into Router</refpurpose>
+  <refpurpose>向Router中添加配置文件中定义的路由</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,8 +14,7 @@
    <methodparam><type>Yaf_Config_Abstract</type><parameter>config</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Add Routes defined in application.ini into
-    <classname>Yaf_Router</classname>'s route stack
+    将application.ini中定义的路由规则添加到<classname>Yaf_Router</classname>的路由栈中
   </para>
 
   &warn.undocumented.func;
