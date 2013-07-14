@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-view-interface.assign" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_View_Interface::assign</refname>
-  <refpurpose>Assign value to View engine</refpurpose>
+  <refpurpose>为视图引擎分配一个模板变量</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-     Assigan values to View engine, then the value can access directly by name in template.
+     为视图引擎分配一个模板变量, 在视图模板中可以直接通过${$name}获取模板变量值
   </para>
 
   &warn.undocumented.func;
