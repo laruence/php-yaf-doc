@@ -26,8 +26,7 @@
     <term><parameter>tempalte_dir</parameter></term>
     <listitem>
      <para>
-      The base directory of the templates,  by default, 
-      it is APPLICATOIN . "/views" for Yaf.
+      模板的基本路劲，默认为APPLICATOIN . "/views"
      </para>
     </listitem>
    </varlistentry>

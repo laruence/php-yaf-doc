@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-view-simple.get" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_View_Simple::__get</refname>
-  <refpurpose>Retrieve assigned variable</refpurpose>
+  <refpurpose>获取视图引擎的一个模板变量值</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,10 +14,10 @@
    <methodparam choice="opt"><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Retrieve assigned varaiable
+   获取视图引擎的一个模板变量值
    <note>
     <para>
-     parameter can be empty since 2.1.11
+     从2.1.11以后，参数可以为空
     </para>
    </note>
   </para>
@@ -30,10 +30,10 @@
     <term><parameter>name</parameter></term>
     <listitem>
      <para>
-      the assigned variable name
+      分配的变量名
      </para>
      <para>
-      if this is empty, all assigned variables will be returned
+      如果为空，所有传递的变量都会被返回
      </para>
     </listitem>
    </varlistentry>

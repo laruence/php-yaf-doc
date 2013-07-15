@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-view-simple.set" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_View_Simple::__set</refname>
-  <refpurpose>Set value to engine</refpurpose>
+  <refpurpose>为视图引擎分配一个模板变量</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,8 +15,7 @@
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-    This is a alternative and easier way to 
-    <methodname>Yaf_View_Simple::assign</methodname>.
+    这是一个更简单并且用来替代 <methodname>Yaf_View_Simple::assign</methodname> 的方法
   </para>
  </refsect1>
 
@@ -27,7 +26,7 @@
     <term><parameter>name</parameter></term>
     <listitem>
      <para>
-       A string value name.
+       一个字符串值的名字
      </para>
     </listitem>
    </varlistentry>
