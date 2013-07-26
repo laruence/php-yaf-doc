@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-loader.registerlocalnamespace" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Loader::registerLocalNamespace</refname>
-  <refpurpose>register local class prefix</refpurpose>
+  <refpurpose>注册本地类前缀</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -25,8 +25,7 @@
     <term><parameter>prefix</parameter></term>
     <listitem>
      <para>
-      a string or a array of class name prefix.
-      all class prefix with these prefix will be loaded in local library path.
+      字符串或者是数组格式的类名前缀，所有拥有和这些前缀相同前缀的类将被加载到本地library路径。
      </para>
     </listitem>
    </varlistentry>

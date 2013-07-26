@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.setdefaultmodule" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::setDefaultModule</refname>
-  <refpurpose>Change default module name</refpurpose>
+  <refpurpose>设置路由的默认模块</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

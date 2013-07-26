@@ -14,7 +14,7 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Remove an item from registry
+   删除存在于注册表中的一个项目
   </para>
  </refsect1>
 

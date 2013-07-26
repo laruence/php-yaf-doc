@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-view-simple.assign" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_View_Simple::assign</refname>
-  <refpurpose>Assign values</refpurpose>
+  <refpurpose>为视图引擎分配一个模板变量</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-   assign variable to view engine
+   为视图引擎分配一个模板变量
   </para>
  </refsect1>
 
@@ -26,10 +26,10 @@
     <term><parameter>name</parameter></term>
     <listitem>
      <para>
-       A string or an array.
+       字符串或者数组
      </para>
      <para>
-       if is string, then the next argument $value is required. 
+       如果为字符串, 则$value不能为空
      </para>
     </listitem>
    </varlistentry>

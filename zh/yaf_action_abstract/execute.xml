@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-action-abstract.execute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Action_Abstract::execute</refname>
-  <refpurpose>Execute the action</refpurpose>
+  <refpurpose>执行动作</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -16,11 +16,10 @@
     choice="opt"><type>mixed</type><parameter>...</parameter></methodparam>
   </methodsynopsis>
   <para>
-   <methodname>Yaf_Action_Abstract::execute</methodname> may have agruments.
+   <methodname>Yaf_Action_Abstract::execute</methodname> 可能会有参数 
    <note>
     <para>
-     The value retrived from the request is not safe. you should do some
-     filtering work before you use it.
+      从请求返回的值可能是不安全的，在使用之前你需要对它们过滤一遍。
     </para>
    </note>
   </para>

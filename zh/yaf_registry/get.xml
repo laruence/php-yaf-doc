@@ -14,7 +14,7 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Retrieve an item from registry
+   获取注册表中寄存的项
   </para>
  </refsect1>
 

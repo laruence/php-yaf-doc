@@ -14,7 +14,7 @@
    <methodparam choice="opt"><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   clear assigned variable
+   清除指定的变量
   </para>
  </refsect1>
 
@@ -25,10 +25,10 @@
     <term><parameter>name</parameter></term>
     <listitem>
      <para>
-       assigned variable name
+       分派的变量名
      </para>
      <para>
-      if empty, will clear all assigned variables
+      如果为空，将会清除所有的变量
      </para>
     </listitem>
    </varlistentry>

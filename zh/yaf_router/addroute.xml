@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-router.addroute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Router::addRoute</refname>
-  <refpurpose>Add new Route into Router</refpurpose>
+  <refpurpose>往Router中添加新的路由</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,13 +15,10 @@
    <methodparam><type>Yaf_Route_Abstract</type><parameter>route</parameter></methodparam>
   </methodsynopsis>
   <para>
-    defaultly, Yaf_Router using a <classname>Yaf_Route_Static</classname> as its defualt route. you
-    can add new routes into Router's route stack by calling this method.
+    默认地，Yaf_Router使用<classname>Yaf_Route_Static</classname>作为它的默认的路由。你可以通过调用这个方法往Router的堆栈中添加一个新的路由
   </para>
   <para>
-    the newer route will be called before the older(route stack), and if the newer router return
-    TRUE, the router process will be end. otherwise, the older one will be
-    called.
+    在路由栈中，新的路由规则会比老的规则先调用，如果新路由规则返回TRUE，那么路由进程将会结束。否则，老的规则将会被调用。
   </para>
 
   &warn.undocumented.func;

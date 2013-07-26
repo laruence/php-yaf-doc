@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.clearlasterror" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::clearLastError</refname>
-  <refpurpose>Clear the last error info</refpurpose>
+  <refpurpose>清除最后的错误信息</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

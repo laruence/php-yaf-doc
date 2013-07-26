@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.setdefaultcontroller" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::setDefaultController</refname>
-  <refpurpose>Change default controller name</refpurpose>
+  <refpurpose>设置路由的默认控制器</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

@@ -14,26 +14,18 @@
    <methodparam><type>Yaf_Request_Abstract</type><parameter>request</parameter></methodparam>
   </methodsynopsis>
   <para>
-    <methodname>Yaf_Route_Interface::route</methodname> is the only method
-    that a custom route should implement.
+    <methodname>Yaf_Route_Interface::route</methodname> 是用户自定义路由唯一需要实现的方法。
   </para>
   <para>
-    if this method return TRUE, then the route process will be end. otherwise,
-    <classname>Yaf_Router</classname> will call next route in the route stack
-    to route request.
+    如果这个方法返回TRUE，那么路由进程将会中止。否则，<classname>Yaf_Router</classname> 将会调用路由堆栈中的下一个路由来路由请求。
   </para>
 
   <para>
-    This method would set the route result to the parameter request, by
-    calling <methodname>Yaf_Request_Abstract::setControllerName</methodname>,
-    <methodname>Yaf_Request_Abstract::setActionName</methodname> and
-    <methodname>Yaf_Request_Abstract::setModuleName</methodname>.
+    这个方法会设置路由的结果给参数请求，通过调用<methodname>Yaf_Request_Abstract::setControllerName</methodname>，<methodname>Yaf_Request_Abstract::setActionName</methodname> 和 <methodname>Yaf_Request_Abstract::setModuleName</methodname>
    </para>
 
    <para>
-    This method should also call
-    <methodname>Yaf_Request_Abstract::setRouted</methodname> to make the
-    request routed at last.
+    这个方法也需要调用<methodname>Yaf_Request_Abstract::setRouted</methodname>做最后的请求路由。
    </para>
   &warn.undocumented.func;
 

@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-request-http.get" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Http::get</refname>
-  <refpurpose>Retrieve variable from client</refpurpose>
+  <refpurpose>从客户端返回变量</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,9 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>default</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Retrieve variable from client, this method will search the
-    <parameter>name</parameter> in request pramas, if the name is not found,
-    then will search in POST, GET, Cookie, Server
+    从客户端返回变量，这个方法将从请求参数中寻找参数<parameter>name</parameter>，如果没有找到的话，将从POST, GET, Cookie, Server中寻找
   </para>
  </refsect1>
 
@@ -36,8 +34,7 @@
     <term><parameter>default</parameter></term>
     <listitem>
      <para>
-      if this parameter is provide, this will be returned if the varialbe can
-      not be found
+      如果提供了此参数，当变量在未被找到的情况下，它将被返回
      </para>
     </listitem>
    </varlistentry>

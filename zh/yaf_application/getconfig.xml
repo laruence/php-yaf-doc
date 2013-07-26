@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-application.getconfig" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Application::getConfig</refname>
-  <refpurpose>Retrive the config instance</refpurpose>
+  <refpurpose>获取 Yaf_Config_Abstract 的实例</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -29,7 +29,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-    A <classname>Yaf_Config_Abstract</classname> instance
+    <classname>Yaf_Config_Abstract</classname> 的实例
   </para>
  </refsect1>
 

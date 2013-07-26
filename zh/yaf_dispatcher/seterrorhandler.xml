@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.seterrorhandler" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::setErrorHandler</refname>
-  <refpurpose>Set error handler</refpurpose>
+  <refpurpose>设置错误处理函数</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,12 +15,11 @@
    <methodparam><type>int</type><parameter>error_types</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Set error handler for Yaf. when <link
-     linkend="configuration.yaf.dispatcher.throwexception">application.dispatcher.throwException</link>
-    is off, Yaf will trigger catchable error while unexpected errors occrred.
+    设置错误处理函数，一般在<link
+     linkend="configuration.yaf.dispatcher.throwexception">application.dispatcher.throwException</link>关闭的情况下，Yaf会在出错的时候触发错误，这个时候，如果设置了错误处理函数，则会把控制交给错误处理函数处理。
   </para>
   <para>
-   Thus, this error handler will be called while the error raise.
+   因此，当错误发生的时候这个错误处理函数将被调用。
   </para>
  </refsect1>
 
@@ -31,7 +30,7 @@
     <term><parameter>callback</parameter></term>
     <listitem>
      <para>
-      A callable callback
+      错误处理的回调函数
      </para>
     </listitem>
    </varlistentry>

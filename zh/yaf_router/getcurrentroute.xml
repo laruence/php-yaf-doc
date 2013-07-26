@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-router.getcurrentroute" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Router::getCurrentRoute</refname>
-  <refpurpose>Get the effective route name</refpurpose>
+  <refpurpose>取得当前有效的路由名</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,11 +14,10 @@
    <void />
   </methodsynopsis>
   <para>
-   Get the name of the route which is effective in the route process.
+    获取当前路由进程中正在起作用的路由名
    <note>
     <para>
-     You should call this method after the route process finished, since
-     before that, this method will always return NULL.
+      你需要在路由进程结束之后调用此方法，在这之前，这个方法会一直返回NULL
     </para>
    </note>
   </para>
@@ -35,14 +34,14 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   String, the name of the effective route.
+   String，当前起效的路由的名字
   </para>
  </refsect1>
 
  <refsect1 role="examples">
   &reftitle.examples;
   <example>
-   <title>Register some routes in Bootstrap</title>
+   <title>注册一些路由到Bootstrap</title>
    <programlisting role="php">
 <![CDATA[
 <?php

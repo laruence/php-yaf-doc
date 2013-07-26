@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-dispatcher.flushinstantly" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Dispatcher::flushInstantly</refname>
-  <refpurpose>Switch on/off the instant flushing</refpurpose>
+  <refpurpose>打开关闭自动响应</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

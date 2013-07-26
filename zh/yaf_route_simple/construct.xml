@@ -16,9 +16,7 @@
    <methodparam><type>string</type><parameter>action_name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   <classname>Yaf_Route_Simple</classname> will get route info from query
-   string. and the parameters of this constructor will used as keys while searching for the
-   route info in $_GET.
+   <classname>Yaf_Route_Simple</classname>将从query string中获得路由信息。这个构造函数的参数会被作为键到$_GET中去寻找路由信息。
   </para>
 
   &warn.undocumented.func;
@@ -32,7 +30,7 @@
     <term><parameter>module_name</parameter></term>
     <listitem>
      <para>
-       The key name of the module info. 
+       module信息的键名。
      </para>
     </listitem>
    </varlistentry>
@@ -40,7 +38,7 @@
     <term><parameter>controller_name</parameter></term>
     <listitem>
      <para>
-      the key name of the controller info.
+      controller信息的键名。
      </para>
     </listitem>
    </varlistentry>
@@ -48,7 +46,7 @@
     <term><parameter>action_name</parameter></term>
     <listitem>
      <para>
-      the key name of the action info.
+      action信息的键名。
      </para>
     </listitem>
    </varlistentry>
@@ -58,7 +56,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   Always return TRUE.
+   总是返回TRUE
   </para>
  </refsect1>
 

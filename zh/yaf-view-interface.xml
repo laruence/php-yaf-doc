@@ -12,10 +12,7 @@
   <section xml:id="yaf-view-interface.intro">
    &reftitle.intro;
    <para>
-    Yaf provides a ability for developers to use coustom view engine instead
-    of build-in engine which is <classname>Yaf_View_Simple</classname>. There 
-    is a example to explain how to do this, please see
-    <methodname>Yaf_Dispatcher::setView</methodname>.
+    Yaf给用户提供一个了一个可扩展的、可自定的视图引擎接口，用户可以使用自己的视图引擎来代替Yaf内置的<classname>Yaf_View_Simple</classname>。下面是一个关于怎么实现的例子，请看<methodname>Yaf_Dispatcher::setView</methodname>。
    </para>
   </section>
 <!-- }}} -->

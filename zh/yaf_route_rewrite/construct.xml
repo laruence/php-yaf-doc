@@ -30,9 +30,7 @@
     <term><parameter>match</parameter></term>
     <listitem>
      <para>
-       A pattern, will be used to match a request uri, if
-       doesn't matched, <classname>Yaf_Route_Rewrite</classname> will return
-       FALSE.
+       一个正则表达式，会被用来匹配一个请求的uri，如果匹配失败，<classname>Yaf_Route_Rewrite</classname> 会返回FALSE。
      </para>
     </listitem>
    </varlistentry>
@@ -40,13 +38,10 @@
     <term><parameter>route</parameter></term>
     <listitem>
      <para>
-      When the match pattern matches the request uri,
-      <classname>Yaf_Route_Rewrite</classname> will use this to decide which
-      m/c/a to routed.
+      当路由正则匹配成功请求uri时，<classname>Yaf_Route_Rewrite</classname> 将会用它来决定哪一个m/c/a被路由。
      </para>
      <para>
-      either of m/c/a in this array is optianl, if you don't assgian a
-      specific value, it will be routed to default.
+      在这个数组中无论是m/c/a都是最优的，如果你没有提供一个明确的值，它将会以默认方式被路由。
      </para>
     </listitem>
    </varlistentry>

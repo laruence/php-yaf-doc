@@ -15,7 +15,7 @@
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
   <para>
-   prepend a content to a exists content block
+   往已有的响应body前插入新的内容
   </para>
  </refsect1>
 
@@ -34,8 +34,7 @@
     <term><parameter>key</parameter></term>
     <listitem>
      <para>
-      the content key, you can set a content with a key, if you don't
-      specific, then Yaf_Response_Abstract::DEFAULT_BODY will be used
+      body所对应的key，你可以设置一个body的键值对，如果你没有指定key，系统默认使用Yaf_Response_Abstract::DEFAULT_BODY
       <note>
        <para>
        this parameter is introduced as of 2.2.0

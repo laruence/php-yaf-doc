@@ -15,8 +15,7 @@
    <methodparam><type>Yaf_Response_Abstract</type><parameter>response</parameter></methodparam>
   </methodsynopsis>
   <para>
-    This hook will be trigged after the route process finished, this hook
-    is usually used for login check.
+    这个勾子在路由结束之后触发，通常被用于登陆检查。
   </para>
 
   &warn.undocumented.func;

@@ -4,7 +4,7 @@
 <refentry xml:id="yaf-action-abstract.getcontroller" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Action_Abstract::getController</refname>
-  <refpurpose>get controller instance</refpurpose>
+  <refpurpose>得到控制器实例</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -14,7 +14,7 @@
    <void />
   </methodsynopsis>
   <para>
-   Retrive the controller object.
+   返回控制器对象。
   </para>
 
   &warn.undocumented.func;
