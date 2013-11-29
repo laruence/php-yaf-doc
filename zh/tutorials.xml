@@ -31,7 +31,7 @@
 
  <section role="examples">
  <example>
-  <title>一个经典的入口文件/title>
+  <title>一个经典的入口文件</title>
   <para>入口文件是所有请求的入口, 一般都借助于rewrite规则, 把所有的请求都重定向到这个入口文件.</para>
    <programlisting role="php">
 <![CDATA[

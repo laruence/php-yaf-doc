@@ -278,19 +278,19 @@ yaf.dispatcher.catchException = 0
       <type>bool</type>
      </term>
      <listitem>
-      <para<name />
+      <para>
        如果设置为On, Yaf会在发生错误的时候抛出异常，参见<methodname>Yaf_Dispatcher::throwException</methodname>.
       </para>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="configuration.yaf.dispatcher.catchexception">
-     <term<name />
+     <term>
       <parameter>application.dispatcher.catchException</parameter>
       <type>bool</type>
      </term>
      <listitem>
       <para>
-       如果设置为On, Yaf会在捕获到异常的时候跳转到响应的错误页面，参见<methodname>Yaf_Dispatcher::catchException</sgml-minimize-attributeshodname>.
+       如果设置为On, Yaf会在捕获到异常的时候跳转到响应的错误页面，参见<methodname>Yaf_Dispatcher::catchException</methodname>.
       </para>
      </listitem>
     </varlistentry>
