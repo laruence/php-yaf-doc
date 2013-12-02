@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327672 $ -->
+<!-- $Revision: 330185 $ -->
 
 <refentry xml:id="yaf-controller-abstract.construct" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -14,7 +14,10 @@
    <void />
   </methodsynopsis>
   <para>
-
+    <methodname>Yaf_Controller_Abstract::__construct</methodname> is final,
+    which means it can not be overridden.
+    You may want to see
+    <methodname>Yaf_Controller_Abstract::init</methodname> instead.
   </para>
  </refsect1>
 
@@ -30,6 +33,12 @@
   </para>
  </refsect1>
 
+ <refsect1 role="seealso">
+  &reftitle.seealso;
+  <simplelist>
+   <member><methodname>Yaf_Controller_Abstract::init</methodname></member>
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

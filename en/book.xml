@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327532 $ -->
+<!-- $Revision: 332156 $ -->
 
 <book xml:id="book.yaf" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Yaf</title>
@@ -12,15 +12,15 @@
    is a PHP framework that is used to develop web applications.
   </para>
   <para>
-   Yaf require PHP 5.2.1 or greater. Earlier versions may not work.
+   Yaf requires PHP 5.2.1 or greater. Earlier versions may not work.
   </para>
   <para>
    A simple Yaf benchmark can be found at <link
     xlink:href="&url.yaf.benchmarks;">Yaf Performance</link>.
   </para>
   <para>
-   For quick start, please refert to <link
-    linkend="yaf.tutorials">Turorials</link>.
+   For a quick start guide, please refer to the <link
+    linkend="yaf.tutorials">Tutorials</link> section.
   </para>
  </preface>
 

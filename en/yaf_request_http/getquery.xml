@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327652 $ -->
+<!-- $Revision: 329591 $ -->
 
 <refentry xml:id="yaf-request-http.getquery" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Request_Http::getQuery</refname>
-  <refpurpose>fetch a query parameter</refpurpose>
+  <refpurpose>Fetch a query parameter</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">

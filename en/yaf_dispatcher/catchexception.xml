@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327671 $ -->
+<!-- $Revision: 328315 $ -->
 
 <refentry xml:id="yaf-dispatcher.catchexception" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -59,7 +59,7 @@ class ErrorController extends Yaf_Controller_Abstract {
       * you can also call to Yaf_Request_Abstract::getException to get the 
       * un-caught exception.
       */
-     public function error($exception) {
+     public function errorAction($exception) {
         /* error occurs */
         switch ($exception->getCode()) {
             case YAF_ERR_NOTFOUND_MODULE:
