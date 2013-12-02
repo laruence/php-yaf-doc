@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 327525 $ -->
+<!-- $Revision: 329592 $ -->
 
 <chapter xml:id="yaf.appconfig" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title xmlns="http://docbook.org/ns/docbook">Application Configuration</title>
@@ -232,7 +232,9 @@ yaf.dispatcher.catchException = 0
      </term>
      <listitem>
       <para>
-       Introduced in Yaf 2.1.6
+       Alias of <link
+        linkend="configuration.yaf.library">application.library</link>. Introduced
+       in Yaf 2.1.6
       </para>
      </listitem>
     </varlistentry>
