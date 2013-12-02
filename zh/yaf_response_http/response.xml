@@ -45,12 +45,6 @@ $response->response();
 ?>
 ]]>
    </programlisting>
-   &example.outputs.similar;
-   <screen>
-<![CDATA[
-Hello World
-]]>
-   </screen>
   </example>
  </refsect1>
 

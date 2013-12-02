@@ -19,9 +19,6 @@
   <para>
     设置一个header的键值对，用法类似header
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
