@@ -8,8 +8,9 @@
 2. PHD
 
 ````
- $ pear install phpdocs/PhD
- $ pear install phpdocs/PhD_Generic phpdocs/PhD_PHP
+ $ pear install doc.php.net/PhD
+ $ pear install doc.php.net/PhD_Generic doc.php.net/PhD_PHP
+ $ pear install doc.php.net/PhD_PHP
  $ phd --help
 ````
 
@@ -58,4 +59,8 @@ $ /path-to-php/bin/php -n -d memory_limit=2G doc-base/configure.php --with-php=/
 $ /path-to-ph/bin/phd -d doc-base/.manual.xml --format=php --package=PHP --partial=book.yaf
 ````
 
-if no errros are reported, then you can find the output under doc-en/output
+if no errros are reported, then you can find the output under doc-zh/output
+
+
+####Setup a local php.net mirror
+
