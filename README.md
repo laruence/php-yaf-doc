@@ -27,7 +27,7 @@
 
 Yaf documents could be found under doc-en/en/reference/yaf
 
-#####Build
+#####Build Yaf doc
 
 ````
 $ /path-to-php/bin/php -n -d memory_limit=2G doc-base/configure.php --with-php=/path-to-php/bin/php --enable-xml-details
@@ -51,7 +51,7 @@ if no errros are reported, then you can find the output under doc-en/output
 
 Yaf documents could be found under doc-zh/zh/reference/yaf
 
-#####Build
+#####Build Yaf doc
 
 ````
 $ /path-to-php/bin/php -n -d memory_limit=2G doc-base/configure.php --with-php=/path-to-php/bin/php --enable-xml-details
