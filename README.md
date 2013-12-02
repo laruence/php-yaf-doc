@@ -1,18 +1,20 @@
-####Yaf Document
+###Yaf Document
 
-####How to build
+###How to build
 
-#####Requirement
+####Requirement
 
 1. PHP-5.3+
 2. PHD
+
 ````
  $ pear install phpdocs/PhD
  $ pear install phpdocs/PhD_Generic phpdocs/PhD_PHP
  $ phd --help
 ````
-#####English Manual
-######Checkout PHP doc tree
+
+####English Manual
+#####Checkout PHP doc tree
 
 ````
  $ mkdir /tmp/svn
@@ -21,11 +23,11 @@
  $ cd /tmp/svn/doc-en
 ````
 
-######Yaf doc
+#####Yaf doc
 
 Yaf documents could be found under doc-en/en/reference/yaf
 
-######Build
+#####Build
 
 ````
 $ /path-to-php/bin/php -n -d memory_limit=2G doc-base/configure.php --with-php=/path-to-php/bin/php --enable-xml-details
@@ -34,9 +36,9 @@ $ /path-to-ph/bin/phd -d doc-base/.manual.xml --format=php --package=PHP --parti
 
 if no errros are reported, then you can find the output under doc-en/output
 
-#####Chinese Manual
+####Chinese Manual
 
-######Checkout PHP doc tree
+#####Checkout PHP doc tree
 
 ````
  $ mkdir /tmp/svn
@@ -45,13 +47,15 @@ if no errros are reported, then you can find the output under doc-en/output
  $ cd /tmp/svn/doc-zh
 ````
 
-######Yaf doc
+#####Yaf doc
 
 Yaf documents could be found under doc-zh/zh/reference/yaf
 
-######Build
+#####Build
 
 ````
 $ /path-to-php/bin/php -n -d memory_limit=2G doc-base/configure.php --with-php=/path-to-php/bin/php --enable-xml-details
 $ /path-to-ph/bin/phd -d doc-base/.manual.xml --format=php --package=PHP --partial=book.yaf
 ````
+
+if no errros are reported, then you can find the output under doc-en/output
