@@ -12,17 +12,16 @@
   <section xml:id="yaf-bootstrap-abstract.intro">
    &reftitle.intro;
    <para>
-     Bootstrap is a mechanism used to do some intial config before a
-     Application run.
+       Bootstrap 是应用运行前初始化应用配置的基础装置
    </para>
    <para>
-     User may define their own Bootstrap class by inheriting
+        用户可以定义自己的 Bootstrap 类， 该类须继承
      <classname>Yaf_Bootstrap_Abstract</classname>
    </para>
    <para>
-     Any method declared in Bootstrap class with leading "_init", will be
-     called by <methodname>Yaf_Application::bootstrap</methodname> one by one 
-     according to their defined order. 
+       在 Bootstrap 类中，所有以 "_init" 开头的方法，将被
+       <methodname>Yaf_Application::bootstrap</methodname>
+       按定义的顺序一个接着一个地被执行。
    </para>
   </section>
 <!-- }}} -->
@@ -34,7 +33,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-   /* bootstrap class should be defined under ./application/Bootstrap.php */
+   /* bootstrap 类应定义在该文件中 ./application/Bootstrap.php */
    class Bootstrap extends Yaf_Bootstrap_Abstract {
         public function _initConfig(Yaf_Dispatcher $dispatcher) {
             var_dump(__METHOD__);

@@ -8,9 +8,9 @@
 2. PHD
 
 ````
- $ pear install doc.php.net/PhD
- $ pear install doc.php.net/PhD_Generic doc.php.net/PhD_PHP
- $ pear install doc.php.net/PhD_PHP
+ $ sudo pear install doc.php.net/PhD
+ $ sudo pear install doc.php.net/PhD_Generic 
+ $ sudo pear install doc.php.net/PhD_PHP
  $ phd --help
 ````
 
