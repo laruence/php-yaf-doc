@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 328221 $ -->
+<!-- $Revision: 332586 $ -->
 
 <refentry xml:id="yaf-route-regex.construct" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Yaf_Route_Regex::__construct</refname>
-  <refpurpose>The __construct purpose</refpurpose>
+  <refpurpose>Yaf_Route_Regex constructor</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
@@ -15,12 +15,10 @@
    <methodparam><type>array</type><parameter>route</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>map</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>verify</parameter></methodparam>
+   <methodparam choice="opt"><type>string</type><parameter>reverse</parameter></methodparam>
   </methodsynopsis>
   <para>
-    
   </para>
-
-  &warn.undocumented.func;
 
  </refsect1>
 
@@ -67,6 +65,20 @@
      </para>
     </listitem>
    </varlistentry>
+   <varlistentry>
+    <term><parameter>reverse</parameter></term>
+    <listitem>
+     <para>
+      a string, used to assemble url, see
+      <methodname>Yaf_Route_Regex::assemble</methodname>.
+      <note>
+       <para>
+       this parameter is introduced in 2.3.0
+       </para>
+      </note>
+     </para>
+    </listitem>
+   </varlistentry>
   </variablelist>
  </refsect1>
 
@@ -92,6 +104,30 @@
            "#^/product/([^/]+)/([^/])+#", //match request uri leading "/product"
            array(
                'controller' => "product",  //route to product controller,
+           ),
+           array(
+              1 => "name",   // now you can call $request->getParam("name")
+              2 => "id",     // to get the first captrue in the match pattern.
+           )
+        )
+    );
+?>
+]]>
+   </programlisting>
+  </example>
+  <example>
+   <title><function>Yaf_Route_Regex(as of 2.3.0)</function>example</title>
+   <programlisting role="php">
+<![CDATA[
+<?php
+   /**
+    * Use match result as MVC name
+    */
+    Yaf_Dispatcher::getInstance()->getRouter()->addRoute("name",
+        new Yaf_Route_Regex(
+           "#^/product/([^/]+)/([^/])+#i", //match request uri leading "/product"
+           array(
+              'controller' => ":name", // route to :name, which is $1 in the match result as controller name
            ),
            array(
               1 => "name",   // now you can call $request->getParam("name")

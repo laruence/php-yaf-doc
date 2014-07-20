@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 332156 $ -->
+<!-- $Revision: 332258 $ -->
 
 <book xml:id="book.yaf" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
- <title>Yaf</title>
+ <title>Yet Another Framework</title>
  <titleabbrev>Yaf</titleabbrev>
 
  <preface xml:id="intro.yaf">

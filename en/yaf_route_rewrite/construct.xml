@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 329575 $ -->
+<!-- $Revision: 333964 $ -->
 
 <refentry xml:id="yaf-route-rewrite.construct" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -28,8 +28,12 @@
     <listitem>
      <para>
        A pattern, will be used to match a request uri, if
-       doesn't matched, <classname>Yaf_Route_Rewrite</classname> will return
+       it doesn't match, <classname>Yaf_Route_Rewrite</classname> will return
        &false;.
+     </para>
+     <para>
+      You can use :name style to name segments matched, and use * to match
+      the rest of the URL segments.
      </para>
     </listitem>
    </varlistentry>
@@ -39,10 +43,10 @@
      <para>
       When the match pattern matches the request uri,
       <classname>Yaf_Route_Rewrite</classname> will use this to decide which
-      m/c/a to routed.
+      module/controller/action is the destination.
      </para>
      <para>
-      either of m/c/a in this array is optianl, if you don't assgian a
+      Either of module/controller/action in this array is optional, if you don't assign a
       specific value, it will be routed to default.
      </para>
     </listitem>
@@ -136,6 +140,50 @@ array(
    <screen>
 <![CDATA[
 /* for http://yourdomain.com/user-list/22
+ * route will result in following values:
+ */
+array(
+  "controller" => "user",
+  "action"     => "list",
+  "module"     => "index", //(default)
+)
+
+/**
+ * and request parameters:
+ */
+array(
+  "id"   => 22,
+)
+]]>
+   </screen>
+  </example>
+  <example>
+   <title><function>Yaf_Route_Rewrite(as of 2.3.0)</function>example</title>
+   <programlisting role="php">
+<![CDATA[
+    <?php
+   /**
+    * Add a rewrite route use match result as m/c/a name
+    */
+    $config = array(
+        "name" => array(
+           "type"  => "rewrite",        
+           "match" => "/user-list/:a/:id", //match only /user-list/*
+           "route" => array(
+               'controller' => "user",   //route to user controller,
+               'action'     => ":a",     //route to :a action
+           ),
+        ),
+    );
+    Yaf_Dispatcher::getInstance()->getRouter()->addConfig(
+        new Yaf_Config_Simple($config));
+?>
+]]>
+   </programlisting>
+   &example.outputs.similar;
+   <screen>
+<![CDATA[
+/* for http://yourdomain.com/user-list/list/22
  * route will result in following values:
  */
 array(
