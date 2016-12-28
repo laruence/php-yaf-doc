@@ -10,7 +10,7 @@
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>protected</modifier> <type>void</type><methodname>Yaf_Response_Abstract::setAllHeaders</methodname>
+   <modifier>public</modifier> <type>void</type><methodname>Yaf_Response_Abstract::setAllHeaders</methodname>
    <void />
   </methodsynopsis>
   <para>
