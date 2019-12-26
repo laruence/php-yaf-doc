@@ -22,6 +22,9 @@
     the newer route will be called before the older(route stack), and if the newer router return
     &true;, the router process will be end. otherwise, the older one will be
     called.
+
+    If you add routes by config file , like an array, the route in the bottom of array will be first matched. 
+    Make sure  put important route in the last of the routes array/config.ini.
   </para>
  </refsect1>
 
