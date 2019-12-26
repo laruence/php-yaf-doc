@@ -51,7 +51,7 @@
  * A controller example
  */
 class ProductController extends Yaf_Controller_Abstract {
-      protected $actions = array(
+      public $actions = array(
           "index" => "actions/Index.php",
       );
 }
